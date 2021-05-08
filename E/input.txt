@@ -1,0 +1,20 @@
+19
+i love segment tree
+>> segment
+<< 7
+21
+frog jumps from river
+>> jumps
+<< 5
+17
+ sybtbv jxqwbu cj
+>> sybtbv
+<< 6
+1
+  ddd
+>> ddd
+<< 3
+1
+  d
+>> d
+<< 1

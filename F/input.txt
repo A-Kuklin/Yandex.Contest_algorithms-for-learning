@@ -1,0 +1,8 @@
+A man, a plan, a canal: Panama
+True
+zo
+False
+aaa 3  5  3 aaa
+True
+  bb   1 ---- * ---- 1 bb
+True
