@@ -1,1 +1,2 @@
-# Yandex.Contest_algorithms-for-learning
+# Yandex Contest
+Условия задач указаны в комментарии перед кодом.
