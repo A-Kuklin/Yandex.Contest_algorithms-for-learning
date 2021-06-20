@@ -1,4 +1,5 @@
 """
+https://contest.yandex.ru/contest/23389/problems/C/
 C. Соседи
 Ограничение времени	1 секунда
 Ограничение памяти	64Mb
@@ -26,12 +27,38 @@ C. Соседи
 Формат вывода
 Напечатайте нужные числа в возрастающем порядке через пробел.
 
+Пример 1
+Ввод
+4
+3
+1 2 3
+0 2 6
+7 4 1
+2 7 0
+3
+0
+Вывод
+7 7
+
+Пример 2
+Ввод
+4
+3
+1 2 3
+0 2 6
+7 4 1
+2 7 0
+0
+0
+Вывод
+0 2
+
 """
 
 import logging
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
+logger.setLevel(logging.DEBUG)
 handler = logging.StreamHandler()
 handler.setFormatter(logging.Formatter('%(levelname)s, %(message)s'))
 logger.addHandler(handler)

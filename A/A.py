@@ -1,4 +1,5 @@
 """
+https://contest.yandex.ru/contest/23389/problems/
 A. Значения функции
 Ограничение времени	0.2 секунды
 Ограничение памяти	64Mb
@@ -16,6 +17,18 @@ A. Значения функции
 Формат вывода
 Выведите одно число — значение функции в точке x.
 
+Пример 1
+Ввод
+-8 -5 -2 7
+Вывод
+-183
+
+Пример 2
+Ввод
+8 2 9 -10
+Вывод
+40
+
 """
 
 
@@ -28,7 +41,14 @@ handler.setFormatter(logging.Formatter('%(levelname)s, %(message)s'))
 logger.addHandler(handler)
 
 
-def run():
+def quadratic_equation(a, x, b, c):
+    logger.debug(f'Проверка входных данных: {a}, {x}, {b}, {c}')
+    y = a*x*x + b*x + c
+    logger.debug(f'Ответ: {y}')
+    return y
+
+
+if __name__ == '__main__':
     with open('input.txt') as file:
         for line in file:
             a, x, b, c = line.split()
@@ -36,15 +56,4 @@ def run():
             x = int(x)
             b = int(b)
             c = int(c)
-            quadratic_equation(a, x, b, c)
-
-
-def quadratic_equation(a, x, b, c):
-    logger.debug(f'Проверка входных данных: {a}, {x}, {b}, {c}')
-    y = a*x*x + b*x + c
-    logger.debug(f'Ответ: {y}')
-    # print(y)
-
-
-if __name__ == '__main__':
-    run()
+            print(quadratic_equation(a, x, b, c))
